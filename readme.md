@@ -11,3 +11,7 @@
 
 - [x]  [Exercise 1-3](./chapter-1/exercise-1-3/fahrenheit-to-celsius.c)
 - [x]  [Exercise 1-4](./chapter-1/exercise-1-4/celsius-to-fahrenheit.c)
+
+### 1.3 The for Statement
+
+- [x]  [Exercise 1-5](./chapter-1/exercise-1-5/celsius-to-fahrenheit-300-to-0.c)
