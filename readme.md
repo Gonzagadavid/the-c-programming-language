@@ -19,3 +19,5 @@
 ### 1.5.1 File Copying
 
 - [x]  [Exercise 1-6](./chapter-1/exercise-1-6/getchar.c)
+
+- [x]  [Exercise 1-7](./chapter-1/exercise-1-7/EOF-value.c)
