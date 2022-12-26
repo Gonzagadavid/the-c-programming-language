@@ -5,7 +5,7 @@
 
 // /* count lines, words, and characters in input */
 
-main() {
+void main() {
   int c, nl, nw, nc, state;
 
   state = OUT;

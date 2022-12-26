@@ -8,7 +8,7 @@ a vertical orientation is more challenging
 
 /* print histogram of the lengths of words */
 
-main() {
+void main() {
   int c, count, wordqty, i;
   int lengthofwords[wordqty];
 

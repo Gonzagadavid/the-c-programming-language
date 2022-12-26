@@ -2,7 +2,7 @@
 
 // replace each string of one or more blanks by a single blank.
 
-main() {
+void main() {
   int c, lastC;
 
   while ((c = getchar()) != EOF) {

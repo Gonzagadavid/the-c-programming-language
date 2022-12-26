@@ -2,7 +2,7 @@
 
 /* count blank, tabs and new line in input; */
 
-main() {
+void main() {
   int chr, blk, tab, nl; 
 
   blk = 0;

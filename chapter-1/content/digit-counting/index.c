@@ -2,7 +2,7 @@
 
 /* count digits, white space, others*/
 
-main() {
+void main() {
   int c, i, nwhite, nother;
   int ndigit[10];
 

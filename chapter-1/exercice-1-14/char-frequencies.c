@@ -10,7 +10,7 @@ diferent characters in its input
 /* print histogram of the frequencies of characters */
 
 
-main() {
+void main() {
   int c, i;
   int characters[ASCII_END - ASCII_START];
 

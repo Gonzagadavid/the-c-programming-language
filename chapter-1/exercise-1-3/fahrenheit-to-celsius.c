@@ -4,7 +4,7 @@
 print Fahrenheit-Celsius table
 */
 
-main() {
+void main() {
   int fahr, celsius;
   int lower, upper, step;
 

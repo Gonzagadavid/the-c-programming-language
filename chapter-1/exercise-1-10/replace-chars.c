@@ -2,7 +2,7 @@
 
 // replace tab by \t, each backspace by \b,  and each blackslash by \\.
 
-main() {
+void main() {
   int c;
 
   while ((c = getchar()) != EOF) {

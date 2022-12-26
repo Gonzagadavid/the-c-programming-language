@@ -4,7 +4,7 @@
 print Celsius-Fahrenheit table
 */
 
-main() {
+void main() {
   int fahr;
 
   printf("Fahrenheit\tCelsius\n");
