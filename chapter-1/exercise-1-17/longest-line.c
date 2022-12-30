@@ -12,20 +12,23 @@ write a program to print all input lines that are longer than
 
 int main() {
   int len;  /* current line length*/
-  int max;  /* maximum length seen so far */
+  int count;
+  int i;
   char line[MAXLINE]; /* current input line */
-  char longest[MAXLINE]; /* longest line saved */
+  char longer_lines[MAXLINE][MAXLINE];
 
-  max = 0;
+  count = 0;
   while ((len = get_line(line, MAXLINE)) > 0) {
-    if (len > max) {
-      max = len;
-      copy(longest, line);
+    if (len > MINIMUM_LINE) {
+      copy(longer_lines[count], line);
+      count++;
     }
   } 
 
-  if (max > MINIMUM_LINE) { /* there was a line */ 
-    printf("%s", longest);
+  if (count > 0) { /* there was a line */
+    for (i = 0; i < count; i++) {
+      printf("%s", longer_lines[i]);
+    }
   }
   return 0;
 }
