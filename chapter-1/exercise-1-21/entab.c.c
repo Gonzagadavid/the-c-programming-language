@@ -7,11 +7,11 @@ int tabs_numbers = 8;
 
 int get_line(char line[], int maxline);
 void copy(char to[], char from[]);
-int dtab(char line[], int index);
+int entab(char line[], int index);
 /* 
-write a program detab that replaces tabs in the input with the proper number 
-of blanks to space to the next tab stop. Assume a fixed set of tab stop,
-say every n columns. should n be a variable or a symbolic parameter? 
+Write a program entab that replaces strings of blanks by the minimum bymber of tabs and blanks 
+to achieve the same spacing. Use the same tab stopsas for detab. when either a tab or a single 
+blank would suffice to reach a tab stop, which should be given preference?
 */
 
 int main() {
@@ -40,8 +40,8 @@ int get_line(char s[], int lim) {
   int c, i;
 
   for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i) {
-    if(c == '\t') {
-      i = dtab(s, i);
+    if(c == ' ') {
+      i = entab(s, i);
     } else {
       s[i] = c;
     }
@@ -64,7 +64,7 @@ void copy(char to[], char from[]) {
 }
 
 
-int dtab(char line[], int index) {
+int entab(char line[], int index) {
   int i;
   extern int tabs_numbers;
 
