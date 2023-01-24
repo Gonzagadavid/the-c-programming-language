@@ -2,7 +2,7 @@
 
 /* count blank, tabs and new line in input; */
 
-void main() {
+int main() {
   int chr, blk, tab, nl; 
 
   blk = 0;
@@ -22,4 +22,6 @@ void main() {
   printf("blank: %d\n", blk);
   printf("tabs: %d\n", tab);
   printf("new line: %d\n", nl);
+
+  return 0;
 }

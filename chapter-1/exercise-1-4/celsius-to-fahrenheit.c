@@ -4,7 +4,7 @@
 print Celsius-Fahrenheit table
 */
 
-void main() {
+int main() {
   int celsius, fahr;
   int lower, upper, step;
 
@@ -21,4 +21,6 @@ void main() {
     printf("%d\t\t%d\n", celsius, fahr);
     celsius = celsius + step;
   }
+
+  return 0;
 }

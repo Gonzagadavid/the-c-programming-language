@@ -2,7 +2,7 @@
 
 /* count digits, white space, others*/
 
-void main() {
+int main() {
   int c, i, nwhite, nother;
   int ndigit[10];
 
@@ -25,4 +25,6 @@ void main() {
   for (i = 0; i < 10; ++i)
     printf(" %d", ndigit[i]);
   printf(", white space = %d other = %d\n", nwhite, nother);
+
+  return 0;
 }

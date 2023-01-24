@@ -5,7 +5,7 @@
 
 // /* print one word per line */
 
-void main() {
+int main() {
   int c;
 
 
@@ -16,4 +16,6 @@ void main() {
       putchar(c);
    } 
   }
+
+  return 0;
 }

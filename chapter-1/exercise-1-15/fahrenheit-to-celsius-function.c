@@ -7,7 +7,7 @@ int toCelsius(int fahr);
 print Fahrenheit-Celsius table
 */
 
-void main() {
+int main() {
   int fahr, celsius;
   int lower, upper, step;
 
@@ -25,6 +25,7 @@ void main() {
     fahr = fahr + step;
   }
 
+  return 0;
 }
 
 int toCelsius(int fahr) {

@@ -5,7 +5,7 @@
 
 // /* count lines, words, and characters in input */
 
-void main() {
+int main() {
   int c, nl, nw, nc, state;
 
   state = OUT;
@@ -23,4 +23,6 @@ void main() {
     } 
   }
   printf("lines: %d  words: %d  characters: %d\n", nl, nw, nc);
+
+  return 0;
 }

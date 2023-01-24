@@ -2,7 +2,7 @@
 
 /* count characters in input; 1st version */
 
-void main() {
+int main() {
   long nc;
 
   nc = 0;

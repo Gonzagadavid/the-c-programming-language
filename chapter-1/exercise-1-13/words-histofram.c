@@ -8,7 +8,7 @@ a vertical orientation is more challenging
 
 /* print histogram of the lengths of words */
 
-void main() {
+int main() {
   int c, count, wordqty, i;
   int lengthofwords[wordqty];
 
@@ -27,4 +27,6 @@ void main() {
   printf("length of word:\n");
   for (i = 0; i < wordqty; ++i)
     printf(" %d\n", lengthofwords[i]);
+
+  return 0;
 }

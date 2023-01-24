@@ -2,7 +2,7 @@
 
 /* count characters in input; 2nd version */
 
-void main() {
+int main() {
   double nc;
 
   nc = 0;
@@ -10,4 +10,6 @@ void main() {
   for(nc = 0; getchar() != EOF; ++nc) 
     ;
   printf("%.0f\n", nc);
+
+  return 0;
 }
