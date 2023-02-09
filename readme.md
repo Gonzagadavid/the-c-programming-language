@@ -21,3 +21,18 @@
 - [x]  [Exercise 1-6](./chapter-1/exercise-1-6/getchar.c)
 
 - [x]  [Exercise 1-7](./chapter-1/exercise-1-7/EOF-value.c)
+
+### 1.5.3 Line Counting
+
+- [x]  [Exercise 1-8](./chapter-1/exercise-1-8/character-counting.c)
+
+- [x]  [Exercise 1-9](./chapter-1/exercise-1-9/replace-char.c)
+
+- [x]  [Exercise 1-10](./chapter-1/exercise-1-10/replace-chars.c)
+
+### 1.5.4 Word Counting
+
+- [x]  [Exercise 1-11](./chapter-1/exercise-1-11)
+
+- [x]  [Exercise 1-7](./chapter-1/exercise-1-7/EOF-value.c)
+
