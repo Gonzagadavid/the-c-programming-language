@@ -21,6 +21,7 @@ int main()
   int nLines = 0;
   extern char program[MAXLINE][MAXLINE];
   int chr_line = 0;
+  int comment_multi_lines = 0;
   
   while ((c = getchar()) != EOF && i < MAXLINE)
   {
@@ -39,9 +40,22 @@ int main()
 
   
   for(int k = 0; k <= qty; k++ ){
-    if(inseted[k][0] != '/') {
+    if(inseted[k][0] == '/' && inseted[k][0] != '*') {
+      comment_multi_lines = 1;
+    }
+
+    if(inseted[k][0] != '/' && comment_multi_lines != 1) {
       remove_comments(inseted[k], chr_line, nLines);
       nLines++;
+    }
+
+    if(comment_multi_lines == 1) {
+      for(int j = 0; j <= MAXLINE && inseted[k][j] != '\0'; j++) {
+        if(inseted[k][j] == '*' && inseted[k][j + 1] == '/') {
+          comment_multi_lines = 0;
+          break;
+        }
+      }
     }
   }
 
